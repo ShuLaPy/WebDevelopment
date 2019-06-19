@@ -1,0 +1,38 @@
+<style>
+.heart {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  transform: rotate(-45deg);
+}
+.heart::after {
+  background-color: red;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 50px;
+}
+.heart::before {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 0px;
+}
+.heart:hover{
+	transform: scale(1.5);
+}
+</style>
+<div class = "heart"></div>
