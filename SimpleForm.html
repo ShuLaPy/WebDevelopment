@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for="first">First Name:</label>
+		<input type="text" id="first" name="First-name" required>
+		<label for="last">Last Name:</label>
+		<input type="text" id="last" name="Last-name" required="yes">
+		<div>
+			<label name="Gender">Gender:</label>
+			<input type="radio" name="gender" id="male">
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="female">
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="other">
+			<label for="other">Other</label><br>
+		</div>
+		<div>
+			<label>Email:</label>
+			<input type="Email" name="email" required="">
+			<label>Password:</label>
+			<input type="Password" name="pass" pattern=".{8,12}" title="8 to 12 characters">
+		</div>
+		<div>
+			<label name="Birth Date">Birth Date:</label>
+			<select name="day">
+				<option value="day">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			<select name="month">
+				<option value="month">Month</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<select name="year">
+				<option value="year">Year</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+				<option value="1997">1997</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000">2000</option>
+			</select>
+		</div>
+		<label for="tearms">I agree to tearms and conditions</label>
+		<input id="tearms" type="checkbox" name="tearms" value="yes" required="yes"><br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
