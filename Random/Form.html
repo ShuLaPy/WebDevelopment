@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Form</title>
+</head>
+<body>
+	<h1 align="center">Registration Form</h1>
+	<hr><br>
+	<form>
+		<fieldset>
+			<legend>Personal Details</legend>
+			<div>
+				<br>
+				<label>Reg no: </label>
+				<input type="text" name="reg_no">
+			</div>
+			<div>
+				<br>
+				<label>Name: </label>
+				<input type="text" name="name">
+				<label>Middle: </label>
+				<input type="text" name="middle">
+				<label>Last: </label>
+				<input type="text" name="last">
+			</div>
+			<div>
+				<br>
+				<label>Address: </label>
+				<input type="address" name="address">
+				<label>Email: </label>
+				<input type="email" name="mail">
+			</div>
+			<div>
+				<br>
+				<label>Contact No: </label>
+				<input type="text" name="contact">
+				<label>DOB: </label>
+				<input type="date" name="dob">
+			</div>
+			<div>
+				<br>
+				<label>Gender: </label>
+				<label>Male </label>
+				<input type="radio" name="gender" value="male">
+				<label>Female </label>
+				<input type="radio" name="gender" value="female">
+				<label>Other </label>
+				<input type="radio" name="gender" value="other">
+				<label>Country</label>
+				<select>
+					<option>Country</option>
+					<option>India</option>
+					<option>United Kingdom</option>
+					<option>United State</option>
+					<option>China</option>
+					<option>Bangladesh</option>
+					<option>Brazzil</option>
+					<option>Japan</option>
+				</select>
+				<label>City</label>
+				<select>
+					<option>City</option>
+					<option>Ichalkaranji</option>
+					<option>Pune</option>
+					<option>Mumbai</option>
+					<option>Delhi</option>
+					<option>Bangalore</option>
+					<option>Kolhapur</option>
+				</select>
+			</div>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Educational Details</legend>
+			<div>
+				<br>
+				<label>SSC</label>
+				<input type="checkbox" name="education" value="SSC">
+				<label>HSC</label>
+				<input type="checkbox" name="education" value="HSC">
+				<label>Graduation</label>
+				<input type="checkbox" name="education" value="graduation">
+				<label>Post Graduation</label>
+				<input type="checkbox" name="education" value="post_graduation">
+			</div>
+		</fieldset>
+		<br>
+		<label>Message: </label>
+		<br><br>
+		<textarea rows="5" cols="40" name="message"></textarea>
+		<br>
+		<div style="text-align: center;">
+			<input type="submit" name="Submit">
+		</div>
+	</form>
+</body>
+</html>
