@@ -1,0 +1,25 @@
+body {
+	font-family: source sans pro;
+	border: 25px solid #bdc3c7;
+	margin-left: 18%;
+	margin-right: 18%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+article {
+	padding-top: 10px;
+	text-align: justify;
+}
+
+time {
+	color: #3498db;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+}
+
+.sideborder {
+	border-left: 4px solid #bdc3c7;
+	padding-left: 10px;
+}
