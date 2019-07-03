@@ -1,0 +1,331 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #4D4946;
+	background-color: #000000;
+	padding-top: 1%;
+}
+
+h1 {
+	font-size: 3.5vw;
+}
+
+#title {
+	text-transform: uppercase;
+}
+
+header {
+	text-align: center;
+	line-height: 1.5em;
+}
+
+#img-div {
+	margin-bottom: 0px;
+}
+
+#img-div img{
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	width: 65%;
+}
+
+#img-caption {
+	position: absolute;
+}
+
+.quote {
+	background: #0D0B0C;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 15px;
+	text-align: center;
+	padding: 40px;
+}
+
+#author-name {
+	text-align: right !important;
+}
+
+.quote-by {
+	grid-area: 1/1/3/2;
+}
+
+.button a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+.gray a{
+	background-color: #4D4946;
+	border: 3px solid #4D4946;
+	color: black;
+	transition: 0.4s;
+}
+
+.black a{
+	border: 3px solid #4D4946;
+	background-color: black;
+	text-transform;
+	color: #4D4946;
+	transition: 0.4s;
+}
+
+.gray a:hover {
+	background-color: black;
+	color: #4D4946;
+}
+
+.black a:hover {
+	background-color: #4D4946;
+	color: black;
+}
+
+.color-overlay {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .7;
+	position: absolute;
+}
+
+#tribute-info {
+	display: grid;
+	padding: 10px 5%;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20%;
+	background-image: url("https://i.postimg.cc/NfTjV1Ls/Background.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+}
+
+.life {
+	z-index: 1;
+}
+
+.facts {
+	display: grid;
+	padding: 10px 5%;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 5%;
+	background: #0D0B0C;
+}
+
+.bullet {
+	line-height: 40px;
+}
+
+.movies {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 3fr 3fr 3fr;
+	padding: 0 5%;
+}
+
+.movies h1 {
+	grid-area: 1/1/2/3;
+	align-self: center;
+	justify-self: center; 
+}
+
+.movies img {
+	width: 80%;
+}
+
+.movies div {
+	align-self: center;
+}
+
+.img-chaplin {
+	grid-area: 3/2/4/3;
+}
+
+.movie-name-heading {
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+}
+
+footer {
+	background: #171516;
+	margin-top: 30px;
+	z-index: 1;
+	text-align: center;
+}
+
+footer h1 {
+	padding-top: 4%;
+	text-align: center;
+}
+
+footer .button {
+	display: inline;
+	padding: 4%;
+}
+
+footer .button a {
+	padding: 12px 40px;
+}
+
+.footer-button {
+	padding-bottom: 25px;
+}
+
+.icons img {
+	width: 4%;
+	padding: 0 20px 20px 20px;
+}
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 5vw;
+	}
+
+	#img-div img{
+		width: 80%;
+	}
+
+	.quote {
+		background: #0D0B0C;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+		grid-gap: 15px;
+		text-align: center;
+		padding: 40px;
+	}
+
+	#author-name {
+		text-align: right !important;
+	}
+
+	.quote-by {
+		grid-area: 1/1/2/3;
+	}
+
+	.quote .button {
+		align-self: center;
+	}
+
+	.quote .gray {
+		justify-self: end;
+	}
+
+	.quote .black {
+		justify-self: start;
+	}
+
+	.but-responsive {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.button a {
+		display: inline-block;
+		text-decoration: none;
+		padding: 8px 12px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.color-overlay {
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: .92;
+		position: absolute;
+	}
+
+	#tribute-info {
+		display: grid;
+		padding: 10px 5%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto;
+		grid-gap: 1%;
+		background-image: url("https://i.postimg.cc/NfTjV1Ls/Background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	.facts {
+		display: grid;
+		padding: 10px 5%;
+		grid-template-columns:1fr;
+		grid-template-rows: 1fr auto;
+		grid-gap: 1%;
+		background: #0D0B0C;
+	}
+
+	.movies {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(7, auto);
+	padding: 0 5%;
+	}
+
+	.movies h1 {
+		grid-area: 1/1/2/2;
+		align-self: center;
+		justify-content: center; 
+	}
+
+	.movies img {
+		width: 80%;
+	}
+
+	.movie-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.movies div {
+		align-self: center;
+	}
+
+	.img-chaplin {
+		grid-area: 4/1/5/2;
+	}
+
+	.movie-name-heading {
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 4px;
+	}
+
+	footer .button {
+	display: inline;
+	padding: 1%;
+	}
+
+	footer .button a {
+		padding: 8px 12px;
+	}
+
+	.footer-button {
+		padding-bottom: 15px;
+	}
+
+	.icons img {
+		width: 7%;
+		padding: 0 20px 20px 20px;
+	}
+}
